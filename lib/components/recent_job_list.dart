@@ -10,7 +10,7 @@ class RecentJobList extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(right: 150.0),
+            padding: const EdgeInsets.only(right: 148.0),
             child: Text(
               "Recent Job List",
               style: TextStyle(
@@ -20,7 +20,7 @@ class RecentJobList extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 15),
           Container(
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
@@ -41,14 +41,17 @@ class RecentJobList extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(
-                          image: AssetImage('lib/icons/pinterest.png'),
-                          fit: BoxFit.cover,
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                            image: AssetImage('lib/icons/google.png'),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
