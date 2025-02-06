@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:smart_it_challenge_ui/components/bottom_navbar.dart';
+import 'package:smart_it_challenge_ui/page/landing_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
       home: Scaffold(
-        body: Center(
-          child: Text("Hello World!!"),
+        backgroundColor: const Color.fromARGB(255, 35, 115, 207),
+        body: SafeArea(
+          child: LandingPage(),
         ),
+        bottomNavigationBar: BottomNavBar(),
       ),
     );
   }
