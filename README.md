@@ -1,16 +1,61 @@
-# smart_it_challenge_ui
+# Smart_IT_Challenge
 
-A new Flutter project.
+## 🚀 Getting Started
 
-## Getting Started
+Follow these steps to set up and run the project on your local machine.
 
-This project is a starting point for a Flutter application.
+### 📌 Prerequisites
+Make sure you have the following installed:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Dart SDK](https://dart.dev/get-dart) (Included with Flutter)
+- Android Studio / Xcode (For running on an emulator/simulator)
+- A connected mobile device or an emulator
 
-A few resources to get you started if this is your first Flutter project:
+### 🛠 Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-project.git
+   cd your-project
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. **Install dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the project**
+   ```bash
+   flutter run
+   ```
+
+### 🏗️ Build the APK (For Android)
+```bash
+flutter build apk
+```
+
+### 🍏 Build for iOS
+```bash
+flutter build ios
+```
+
+### 📄 Folder Structure
+```bash
+|-- lib/
+|   |-- main.dart          # Entry point of the application
+|   |-- screens/           # UI Screens
+|   |-- components/        # Reusable widget
+|-- assets/                # Images, fonts, etc.
+|-- pubspec.yaml           # Dependencies & configuration
+|-- README.md              # Project documentation
+```
+
+### ⚡ Useful Commands
+- **Check Flutter Version**: `flutter --version`
+- **Check Connected Devices**: `flutter devices`
+- **Run with Specific Device**: `flutter run -d <device-id>`
+- **Analyze Code**: `flutter analyze`
+
+
+🚀 **Happy Coding!**
+
