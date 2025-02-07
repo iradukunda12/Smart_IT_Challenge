@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smart_it_challenge_ui/model/job_model.dart';
 
 class JobCard extends StatelessWidget {
@@ -14,12 +15,12 @@ class JobCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 290,
-      margin: const EdgeInsets.symmetric(horizontal: 6),
+      width: 290.w,
+      margin: EdgeInsets.symmetric(horizontal: 6.w),
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: job.cardColor,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(24.r),
         boxShadow: [
           BoxShadow(
             color: const Color.fromARGB(255, 176, 173, 173).withOpacity(0.1),
@@ -39,8 +40,8 @@ class JobCard extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    width: 32,
-                    height: 32,
+                    width: 32.w,
+                    height: 32.h,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
@@ -58,21 +59,21 @@ class JobCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 12),
+                  SizedBox(width: 12.w),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         job.companyName,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 16.sp,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                       Text(
                         job.companyLocation,
                         style: TextStyle(
-                          fontSize: 14,
+                          fontSize: 13.sp,
                           color: Colors.grey[600],
                         ),
                       ),
@@ -82,58 +83,58 @@ class JobCard extends StatelessWidget {
               ),
               Image.asset(
                 "lib/icons/wishlist.png",
-                width: 24,
-                height: 24,
+                width: 26.w,
+                height: 23.h,
               )
             ],
           ),
-          const SizedBox(height: 32),
+          SizedBox(height: 32.h),
           Text(
             job.jobTitle,
-            style: const TextStyle(
-              fontSize: 20,
+            style: TextStyle(
+              fontSize: 20.sp,
               fontWeight: FontWeight.w500,
             ),
           ),
-          const SizedBox(height: 4),
+          SizedBox(height: 4.h),
           Row(
             children: [
               Text(
                 job.seniority,
                 style: TextStyle(
                   color: Colors.grey[600],
-                  fontSize: 14,
+                  fontSize: 14.sp,
                 ),
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: 8.w),
               Text(
                 "•",
                 style: TextStyle(color: Colors.grey[600]),
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: 8.w),
               Text(
                 job.jobType,
                 style: TextStyle(
                   color: Colors.grey[600],
-                  fontSize: 14,
+                  fontSize: 14.sp,
                 ),
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: 8.w),
               Text(
                 "•",
                 style: TextStyle(color: Colors.grey[600]),
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: 8.w),
               Text(
                 job.workMode,
                 style: TextStyle(
                   color: Colors.grey[600],
-                  fontSize: 14,
+                  fontSize: 14.sp,
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 19.h),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -141,9 +142,9 @@ class JobCard extends StatelessWidget {
                 onPressed: onApplyPressed,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF4169E1),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 24.w,
+                    vertical: 11.h,
                   ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -162,8 +163,8 @@ class JobCard extends StatelessWidget {
                   children: [
                     TextSpan(
                       text: "\$${job.monthlySalary.toStringAsFixed(0)}K",
-                      style: const TextStyle(
-                        fontSize: 20,
+                      style: TextStyle(
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.w600,
                         color: Colors.black,
                       ),
@@ -171,7 +172,7 @@ class JobCard extends StatelessWidget {
                     TextSpan(
                       text: "/Month",
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 14.sp,
                         color: Colors.grey[600],
                       ),
                     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomSearchInput extends StatelessWidget {
   final TextEditingController? controller;
@@ -63,19 +64,19 @@ class CustomSearchInput extends StatelessWidget {
           filled: true,
           fillColor: backgroundColor ?? Colors.white,
           contentPadding: padding ??
-              const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 16,
+              EdgeInsets.symmetric(
+                horizontal: 16.w,
+                vertical: 16.h,
               ),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(12.r),
             borderSide: BorderSide.none,
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(12.r),
             borderSide: BorderSide(
               color: iconColor ?? Colors.blue,
-              width: 1.5,
+              width: 1.5.w,
             ),
           ),
         ),

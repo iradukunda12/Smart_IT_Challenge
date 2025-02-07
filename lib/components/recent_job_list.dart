@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RecentJobList extends StatelessWidget {
   const RecentJobList({super.key});
@@ -6,26 +7,26 @@ class RecentJobList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: EdgeInsets.symmetric(horizontal: 20.0.w),
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(right: 148.0),
+            padding: EdgeInsets.only(right: 148.0.w),
             child: Text(
               "Recent Job List",
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 24.sp,
                 fontWeight: FontWeight.w500,
                 fontStyle: FontStyle.normal,
               ),
             ),
           ),
-          SizedBox(height: 15),
+          SizedBox(height: 15.h),
           Container(
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(8.r),
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.1),
@@ -42,12 +43,12 @@ class RecentJobList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
+                      padding: EdgeInsets.only(top: 8.0.h),
                       child: Container(
-                        width: 30,
-                        height: 30,
+                        width: 30.w,
+                        height: 30.h,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(8.r),
                           image: DecorationImage(
                             image: AssetImage('lib/icons/google.png'),
                             fit: BoxFit.cover,
@@ -55,25 +56,25 @@ class RecentJobList extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    SizedBox(width: 12.w),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Product Designer',
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        SizedBox(height: 4),
+                        SizedBox(height: 4.h),
                         Row(
                           children: [
                             Text(
                               'Senior',
                               style: TextStyle(
                                 color: Colors.grey[600],
-                                fontSize: 14,
+                                fontSize: 13.sp,
                               ),
                             ),
                             _buildDot(),
@@ -81,7 +82,7 @@ class RecentJobList extends StatelessWidget {
                               'Fulltime',
                               style: TextStyle(
                                 color: Colors.grey[600],
-                                fontSize: 14,
+                                fontSize: 13.sp,
                               ),
                             ),
                             _buildDot(),
@@ -89,7 +90,7 @@ class RecentJobList extends StatelessWidget {
                               'Remote',
                               style: TextStyle(
                                 color: Colors.grey[600],
-                                fontSize: 14,
+                                fontSize: 14.sp,
                               ),
                             ),
                           ],
@@ -123,17 +124,17 @@ class RecentJobList extends StatelessWidget {
                     children: [
                       Image.asset(
                         "lib/icons/wishlist.png",
-                        width: 26,
-                        height: 26,
+                        width: 26.w,
+                        height: 23.h,
                       ),
-                      SizedBox(height: 36),
+                      SizedBox(height: 36.h),
                       SizedBox(
-                        width: 80,
+                        width: 79.w,
                         child: Text(
                           '12 Minute Ago',
                           style: TextStyle(
                             color: Colors.grey[400],
-                            fontSize: 12,
+                            fontSize: 12.sp,
                           ),
                           overflow: TextOverflow.ellipsis,
                         ),

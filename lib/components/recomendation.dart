@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smart_it_challenge_ui/components/job_list_view.dart';
 import 'package:smart_it_challenge_ui/model/job_model.dart';
 
@@ -13,22 +14,22 @@ class _RecomendationState extends State<Recomendation> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: EdgeInsets.symmetric(horizontal: 20.0.w),
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(right: 150.0),
+            padding: EdgeInsets.only(right: 150.w),
             child: Text(
               "Recomendation",
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 24.sp,
                 fontWeight: FontWeight.w500,
                 fontStyle: FontStyle.normal,
               ),
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 15.h,
           ),
           JobListView(
             jobs: [
