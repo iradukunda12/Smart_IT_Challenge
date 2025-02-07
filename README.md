@@ -15,8 +15,8 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/your-project.git
-   cd your-project
+   git clone https://github.com/iradukunda12/Smart_IT_Challenge.git
+   cd Smart_IT_Challenge
    ```
 
 2. **Install dependencies**
@@ -43,6 +43,7 @@ flutter build ios
 ```bash
 |-- lib/
 |   |-- main.dart          # Entry point of the application
+|   |--icons               # Icons Asset
 |   |-- screens/           # UI Screens
 |   |-- components/        # Reusable widget
 |-- assets/                # Images, fonts, etc.
